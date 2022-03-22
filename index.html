@@ -1,93 +1,150 @@
 <!DOCTYPE html>
-<html lang="EN">
+<html>
 
 <head>
-    <title>Project 3</title>
-    <link rel="stylesheet" href="./css/mobile_huynh.css">
-    <link rel="stylesheet" href="./css/tablet_huynh.css">
-    <link rel="stylesheet" href="./css/desktop_huynh.css">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- Hotjar Tracking Code for https://huynhanhbk.github.io/ -->
-<script>
-    (function(h,o,t,j,a,r){
-        h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
-        h._hjSettings={hjid:2884518,hjsv:6};
-        a=o.getElementsByTagName('head')[0];
-        r=o.createElement('script');r.async=1;
-        r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
-        a.appendChild(r);
-    })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
-    !function(s,u,b,i,z){var o,t,r,y;s[i]||(s._sbzaccid=z,s[i]=function(){s[i].q.push(arguments)},s[i].q=[],s[i]("setAccount",z),r=["widget.subiz.net","storage.googleapis"+(t=".com"),"app.sbz.workers.dev",i+"a"+(o=function(k,t){var n=t<=6?5:o(k,t-1)+o(k,t-3);return k!==t?n:n.toString(32)})(20,20)+t,i+"b"+o(30,30)+t,i+"c"+o(40,40)+t],(y=function(k){var t,n;s._subiz_init_2094850928430||r[k]&&(t=u.createElement(b),n=u.getElementsByTagName(b)[0],t.async=1,t.src="https://"+r[k]+"/sbz/app.js?accid="+z,n.parentNode.insertBefore(t,n),setTimeout(y,2e3,k+1))})(0))}(window,document,"script","subiz", "acrgyslrvewifrkksfvn")
+    <title>Núi Thành quê tôi!</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+    <link href="https://use.fontawesome.com/releases/v5.0.4/css/all.css" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js">
+    </script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+    <link href="./css/style.css" rel="stylesheet">
+    <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
+    <script>
+        (function(h, o, t, j, a, r) {
+            h.hj = h.hj || function() {
+                (h.hj.q = h.hj.q || []).push(arguments)
+            };
+            h._hjSettings = {
+                hjid: 2884518,
+                hjsv: 6
+            };
+            a = o.getElementsByTagName('head')[0];
+            r = o.createElement('script');
+            r.async = 1;
+            r.src = t + h._hjSettings.hjid + j + h._hjSettings.hjsv;
+            a.appendChild(r);
+        })(window, document, 'https://static.hotjar.com/c/hotjar-', '.js?sv=');
+        ! function(s, u, b, i, z) {
+            var o, t, r, y;
+            s[i] || (s._sbzaccid = z, s[i] = function() {
+                s[i].q.push(arguments)
+            }, s[i].q = [], s[i]("setAccount", z), r = ["widget.subiz.net", "storage.googleapis" + (t = ".com"), "app.sbz.workers.dev", i + "a" + (o = function(k, t) {
+                var n = t <= 6 ? 5 : o(k, t - 1) + o(k, t - 3);
+                return k !== t ? n : n.toString(32)
+            })(20, 20) + t, i + "b" + o(30, 30) + t, i + "c" + o(40, 40) + t], (y = function(k) {
+                var t, n;
+                s._subiz_init_2094850928430 || r[k] && (t = u.createElement(b), n = u.getElementsByTagName(b)[0], t.async = 1, t.src = "https://" + r[k] + "/sbz/app.js?accid=" + z, n.parentNode.insertBefore(t, n), setTimeout(y, 2e3, k + 1))
+            })(0))
+        }(window, document, "script", "subiz", "acrgyslrvewifrkksfvn")
     </script>
     <!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-B6YSGSM287"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-B6YSGSM287"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
 
-  gtag('config', 'G-B6YSGSM287');
-</script>
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+
+        gtag('config', 'G-B6YSGSM287');
+    </script>
+
 </head>
 
 <body>
-    <ul class="menu">
-        <li class="mn-left"><a href="#">Brand</a></li>
-        <li class="mn-left"><a href="#">Browse</a></li>
-        <li class="mn-right" style="padding-right: 80px;"><a href="#">Help</a></li>
-        <li class="mn-right"><a href="#">Log In</a></li>
-        <li class="mn-right"><a href="#">Sign Up</a></li>
-    </ul>
-    <br>
-
-    <div id="banner">
-        <div class="content">
-            <h1>Find a place to stay.</h1>
-            <p>Rent from people in over 34,000 cities and 192 countries.</p>
+    <div class="container-fluid">
+        <div class="row">
+            <img src="./image/canhdep/banner.jpg" class="mx-auto d-block" title="Cảnh đẹp Núi Thành, Núi Thành quê tôi" alt="Núi Thành" width="100%" height="370px">
         </div>
     </div>
-
-    <hr>
-
-    <div id="main-content" class="row">
-        <div>
-            <h1>Neighborhood Guides</h1>
-            <p>Not sure where to stay? We've created neighborhood guides for cities all around the world.</p>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-md navbar-light bg-primary sticky-top navbar-fixed-top">
+        <div class="container-fluid">
+            <a class="navbar-branch" href="./index.html">
+                <img src="./image/canhdep/logo.jpg" height="70">
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive">
+			<span class="navbar-toggler-icon"></span>
+		</button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="index.html">GIỚI THIỆU</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./html/canhdep.html">CẢNH ĐẸP</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./html/amthuc.html">ẨM THỰC</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./html/nghe.html">NGHỀ TRUYỀN THỐNG</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./html/lienhe.html">LIÊN HỆ</a>
+                    </li>
+                </ul>
+            </div>
         </div>
+    </nav>
+
+    <div class="container">
         <br>
-        <div class="col-4 col-s-6 column">
-            <img src="https://s3.amazonaws.com/codecademy-content/courses/ltp/img/mexico-city.png" style="padding-bottom: 25px">
-            <img src="https://s3.amazonaws.com/codecademy-content/courses/ltp/img/ny.png">
-        </div>
-        <div class="col-4 col-s-6 column">
-            <img src="https://s3.amazonaws.com/codecademy-content/courses/ltp/img/tokyo.png" style="padding-bottom: 25px">
-            <img src="https://s3.amazonaws.com/codecademy-content/courses/ltp/img/paris.png">
-        </div>
-        <div class="col-4 col-s-6 column">
-            <img src="https://s3.amazonaws.com/codecademy-content/courses/ltp/img/invite.png">
-        </div>
+        <h2 class="text-primary">Giới thiệu về huyện Núi Thành</h2><br>
+        <img src="./image/canhdep/tuongdai.jpg" class="mx-auto d-block" style="width:90%"><br>
+        <p>Núi Thành là huyện nằm phía Nam của tỉnh Quảng Nam, được thành lập năm 1983 trên cơ sở tách huyện Tam Kỳ thành thị xã Tam Kỳ và huyện Núi Thành.Phía bắc giáp thành phố Tam Kỳ, phía nam giáp huyện Bình Sơn và huyện Trà Bồng tỉnh Quảng Ngãi, phía
+            Tây giáp huyện Nam Trà My, phía đông giáp Biển Đông. Huyện có đường bờ biển dài 37 km với nhiều bãi tắm đẹp như biển Rạng, Tam Hải, Tam Tiến. Hiện có nhiều dự án du lịch biển lớn đang hoạt động như Le Domaine De Tam Hai, Cát Vàng Tam Tiến,
+            Chu Lai Resort. Tam Hải là xã đảo duy nhất của huyện.</p><br>
+        <p>Núi Thành là trung tâm phát triển công nghiệp nhanh và mạnh nhất của tỉnh Quảng Nam. Với Khu Kinh tế Mở Chu Lai được đánh giá là khu kinh tế thành công nhất Việt Nam, Núi Thành đóng góp hơn 60% tổng thu ngân sách Quảng Nam. Kinh tế chuyển dịch
+            rõ rệt theo hướng công nghiệp hóa, hiện đại hóa.</p><br>
+        <p>Các KCN Bắc Chu Lai, KCN Cảng và Dịch vụ Hậu cần Tam Hiệp, KCN Tam Anh, và Khu Phi thuế quan cảng Kỳ Hà là động lực phát triển của huyện trong những năm tới. Những dự án du lịch lớn tạo điều kiện thuận lợi để khai thác tốt hơn tiềm năng du lịch
+            biển của địa phương. Khu Liên Hiệp Cơ khí Ô Tô Chu Lai-Trường Hải, nhà máy Kính nổi, nhà máy sản xuất xút là các cơ sở sản xuất công nghiệp trọng điểm của huyện (tính đến năm 2011).</p><br>
+        <p>Bên cạnh việc phát triển rất nhanh công nghiệp, ngành nông nghiệp với trọng tâm đánh bắt xa bờ và nuôi trồng thủy hải sản cũng đem lại nguồn thu ổn định cho cư dân ven biển. Núi Thành là tỉnh có sản lượng đánh bắt thủy hải sản lớn nhất tỉnh Quảng
+            Nam và là một trong những trung tâm ngư nghiệp mạnh của duyên Hải Miền Trung.</p>
     </div>
+    <hr class="my-4">
 
+    <footer>
+        <div class="container-fluid">
+            <div class="row text-center bg-primary">
+                <div class="col-md-4">
+                    <br>
+                    <h5>Về chúng tôi</h5>
+                    <hr class="light">
+                    <p>0387 787 409</p>
+                    <p>huynhanhbk.92@gmail.com</p>
+                    <p>Núi Thành, Quảng Nam</p>
+                </div>
 
-    <div id="footer" class="row">
-        <div class="col-4 col-s-9 column">
-            <h1>Travel</h1>
-            <p>From apartments and rooms to treehouses and boats: stay in unique spaces in 192 countries.</p>
-            <p><a href="#">See how to travel on Airbnb</a></p>
+                <div class="col-md-4">
+                    <br>
+                    <h5>Chủ đề</h5>
+                    <hr class="light">
+                    <p><a href="./html/canhdep.html">Cảnh đẹp Núi Thành</a></p>
+                    <p><a href="./html/amthuc.html">Ẩm thực Núi Thành</a></p>
+                    <p><a href="./html/nghe.html">Nghề truyền thống tại Núi Thành</a></p>
+                </div>
+                <div class="col-md-4">
+                    <br>
+                    <h5>Website liên kết</h5>
+                    <hr class="light">
+                    <p><a href="http://thptnuithanh.edu.vn/" target="_blank">Trường THPT Núi Thành</a></p>
+                    <p><a href="http://nuithanh.quangnam.gov.vn/" target="_blank">Cổng thông tin điện tử huyện Núi Thành</a></p>
+                    <p><a href="http://tuoitrenuithanh.vn/" target="_blank">Tuổi trẻ huyện Núi Thành</a></p>
+                </div>
+                <div class="col-12">
+                    <hr class="light-100">
+                    <h5 style="color: black;">&copy;Được xây dựng bởi HuynhLAFX16319</h5>
+                </div>
+            </div>
         </div>
-
-        <div class="col-4 col-s-9 column">
-            <h1>Host</h1>
-            <p>Renting out your unused space could pay your bills or fund your next vacation.</p>
-            <p><a href="#">Learn more about hosting</a></p>
-        </div>
-
-        <div class="col-4 col-s-9 column">
-            <h1>Trust and Safety</h1>
-            <p>From Verified ID to our worldwide customer support team, we've got your back.</p>
-            <p><a href="#">Learn about trust at Airbnb</a></p>
-        </div>
-    </div>
+    </footer>
 </body>
+
 
 </html>
